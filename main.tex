@@ -1,0 +1,90 @@
+\documentclass[a4paper,openright,12pt,oneside]{article}
+\usepackage[left=3cm,top=3cm,right=2.5cm,foot=3cm]{geometry} %marcos
+
+%Paquetes
+\usepackage{setspace}
+\usepackage[nottoc]{tocbibind}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{ragged2e}
+\usepackage{amssymb,amsmath}
+\usepackage[scr]{rsfso}
+\usepackage{float}
+\usepackage[spanish,es-tabla]{babel}
+\spanishdecimal{.}
+\usepackage{enumitem} 
+\usepackage{graphics}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\graphicspath{{imagenes/}}  % Ruta de las figuras
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage{listings}
+
+% Colores
+\definecolor{azul}{rgb}{0.094 0.32 0.615}
+\definecolor{matlabBlue}{RGB}{0, 0, 255}
+\definecolor{matlabGreen}{RGB}{34, 139, 34}
+\definecolor{matlabRed}{RGB}{163, 21, 21}
+\definecolor{matlabOrange}{RGB}{255, 140, 0}
+\definecolor{backgroundLight}{RGB}{255, 255, 255}
+\definecolor{backgroundDark}{RGB}{30, 30, 30}
+\definecolor{basicTextLight}{RGB}{0, 0, 0}
+\definecolor{basicTextDark}{RGB}{220, 220, 220}
+\definecolor{lineNumbersLight}{RGB}{169, 169, 169}
+\definecolor{lineNumbersDark}{RGB}{100, 100, 100}
+
+\lstdefinestyle{matlabLight}{
+    backgroundcolor=\color{backgroundLight},
+    basicstyle=\ttfamily\footnotesize\color{basicTextLight},
+    keywordstyle=\color{matlabBlue}\bfseries,
+    commentstyle=\color{matlabGreen}\itshape,
+    stringstyle=\color{matlabOrange},
+    numberstyle=\tiny\color{lineNumbersLight},
+    breaklines=true,
+    frame=single,
+    tabsize=4,
+    captionpos=b,
+    numbers=left,
+    showstringspaces=false,
+}
+
+\definecolor{arduinoBlue}{RGB}{97, 175, 239}
+\definecolor{arduinoComment}{RGB}{106, 153, 85}
+\definecolor{arduinoString}{RGB}{224, 108, 117}
+\definecolor{backgroundBlack}{RGB}{40, 44, 52}
+\definecolor{basicText}{RGB}{248, 248, 242}
+\definecolor{lineNumbers}{RGB}{130, 130, 130}
+
+\lstdefinestyle{arduinoStyle}{
+    backgroundcolor=\color{backgroundBlack},
+    basicstyle=\ttfamily\footnotesize\color{basicText},
+    keywordstyle=\color{arduinoBlue}\bfseries,
+    commentstyle=\color{arduinoComment}\itshape,
+    stringstyle=\color{arduinoString},
+    numberstyle=\tiny\color{lineNumbers},
+    breaklines=true,
+    frame=single,
+    tabsize=4,
+    captionpos=b,
+    numbers=left,
+    showstringspaces=false,
+}
+
+\renewcommand{\lstlistingname}{Código}
+
+\date{\today}
+\title{Reporte de prácticas \#}
+
+\begin{document}
+
+\input{portada}
+\input{objetivo}
+\input{introduccion}
+\input{desarrollo}
+\input{resultados}
+\input{conclusiones}
+
+\end{document}
